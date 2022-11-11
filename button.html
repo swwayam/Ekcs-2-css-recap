@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: yellow;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 300px;
+        transition: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: .2s;
+    }
+
+    button:hover{
+        transform: translateY(-5px);
+        box-shadow: 3px 5px 2px rgba(51, 51, 51, 0.493);
+    }
+
+    button:active{
+        transform: translateY(0px);
+        box-shadow: 1.5px 2px 2px rgba(51, 51, 51, 0.527);
+    }
+</style>
+<body>
+    <button>Submit</button>
+</body>
+</html>

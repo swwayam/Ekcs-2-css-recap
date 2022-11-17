@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            
+            background-color: rgb(63, 62, 62);
+            display: grid;
+            /* grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px; */
+            /* grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            /* justify-content: space-around;
+            align-items: center; */
+        }
+
+        .elements{
+            background-color: beige;
+            height: 70px;
+            width: 70px;
+        }
+
+        .element1{
+            /* grid-column: 1 / span 2;
+            grid-row: 1 / span 2; */
+            justify-self: stretch;
+        }
+
+        .element2{
+            /* grid-column: 1 / span 2;
+            grid-row: 3 / span 4; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="elements element1"></div>
+        <div class="elements"></div>
+        <div class="elements"></div>
+        <div class="elements element2"></div>
+        <div class="elements"></div>
+        <div class="elements"></div>
+       
+       
+
+    </div>
+</body>
+</html>
